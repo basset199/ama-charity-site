@@ -1,101 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>عَمّ - موقع خيري</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عَمّ الخيرية – AMMA Al-Khairiya</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Cairo', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
     }
-    .main-header {
-      background-color: #1e88e5;
+    header {
+      background-color: #1e90ef;
+      color: white;
       padding: 1rem 2rem;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
     .logo-container {
       display: flex;
-      align-items: center;
-      gap: 1rem;
-      text-align: right;
+      flex-direction: column;
+      align-items: flex-start;
     }
     .logo-container img {
-      width: 160px;
-      height: auto;
+      width: 200px;
+      margin-bottom: 0.5rem;
     }
     .logo-container h1 {
       margin: 0;
-      font-size: 1.8rem;
-      color: white;
+      font-size: 1.5rem;
     }
     .logo-container p {
       margin: 0;
-      font-size: 0.9rem;
-      color: #e0e0e0;
+      font-size: 1rem;
+    }
+    nav {
+      background-color: #fff;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #1e90ef;
+      text-decoration: none;
+      font-weight: bold;
     }
     section {
       padding: 2rem;
+      text-align: center;
     }
     footer {
-      background-color: #333;
+      background-color: #222;
       color: white;
       text-align: center;
       padding: 1rem;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    form button {
-      background-color: #1e88e5;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <header class="main-header">
+  <header>
     <div class="logo-container">
-      <img src="logo.png" alt="شعار عَمّ">
-      <div>
-        <h1>عَمّ الخيرية</h1>
-        <p>AMMA Al-Khairiya</p>
-      </div>
+      <img src="logo.png" alt="شعار عمّ الخيرية">
+      <h1>عَمّ الخيرية</h1>
+      <p>معًا لنصنع الأثر</p>
     </div>
   </header>
 
-  <section>
-    <h2>من نحن</h2>
-    <p>نحن مبادرة غير ربحية تهدف لدعم المشاريع الخيرية والمجتمعية باستخدام التقنية.</p>
-  </section>
+  <nav>
+    <a href="about.html">من نحن</a>
+    <a href="activities.html">أنشطتنا</a>
+    <a href="volunteer.html">تطوع معنا</a>
+    <a href="donate.html">تبرع</a>
+  </nav>
 
   <section>
-    <h2>تواصل معنا</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="الاسم الكامل" required>
-      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-      <textarea name="message" rows="5" placeholder="رسالتك" required></textarea>
-      <button type="submit">إرسال</button>
-    </form>
+    <h2>مرحبًا بكم في عَمّ الخيرية</h2>
+    <p>نحن مبادرة تسعى إلى تمكين العمل الخيري والمجتمعي باستخدام التقنية والشفافية، لتعظيم الأثر.</p>
   </section>
 
   <footer>
-    <p>© 2025 عَمّ. جميع الحقوق محفوظة.</p>
+    &copy; 2025 عَمّ الخيرية. جميع الحقوق محفوظة.
   </footer>
 
 </body>

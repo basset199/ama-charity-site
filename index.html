@@ -1,53 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>عَمّ الخيرية – AMMA Al-Khairiya</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <title>عَمّ الخيرية</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Cairo', sans-serif;
+      padding: 0;
       background-color: #f9f9f9;
       color: #333;
     }
     header {
-      background-color: #1e90ef;
+      background-color: #1e88e5;
       color: white;
-      padding: 1rem 2rem;
+      padding: 1rem;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
-      flex-wrap: wrap;
     }
-    .logo-container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+    header img {
+      height: 80px;
+      margin-left: 1rem;
     }
-    .logo-container img {
-      width: 200px;
-      margin-bottom: 0.5rem;
-    }
-    .logo-container h1 {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-    .logo-container p {
-      margin: 0;
-      font-size: 1rem;
+    header div {
+      text-align: right;
     }
     nav {
-      background-color: #fff;
-      text-align: center;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
       padding: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-bottom: 1px solid #ccc;
     }
     nav a {
-      margin: 0 1rem;
-      color: #1e90ef;
       text-decoration: none;
+      color: #1e88e5;
       font-weight: bold;
     }
     section {
@@ -55,39 +46,50 @@
       text-align: center;
     }
     footer {
-      background-color: #222;
+      background-color: #262626;
       color: white;
       text-align: center;
       padding: 1rem;
-      margin-top: 2rem;
+    }
+    img.qr {
+      width: 220px;
+      margin: 1rem auto;
+      display: block;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <div class="logo-container">
-      <img src="logo.png" alt="شعار عمّ الخيرية">
+    <div>
       <h1>عَمّ الخيرية</h1>
       <p>معًا لنصنع الأثر</p>
     </div>
+    <img src="logo.png" alt="شعار عَمّ الخيرية" />
   </header>
 
   <nav>
-    <a href="about.html">من نحن</a>
-    <a href="activities.html">أنشطتنا</a>
-    <a href="volunteer.html">تطوع معنا</a>
-    <a href="donate.html">تبرع</a>
+    <a href="#about">من نحن</a>
+    <a href="#activities">أنشطتنا</a>
+    <a href="#volunteer">تطوع معنا</a>
+    <a href="#donate">تبرع</a>
   </nav>
 
-  <section>
-    <h2>مرحبًا بكم في عَمّ الخيرية</h2>
-    <p>نحن مبادرة تسعى إلى تمكين العمل الخيري والمجتمعي باستخدام التقنية والشفافية، لتعظيم الأثر.</p>
+  <section id="about">
+    <h2>من نحن</h2>
+    <p>نحن مبادرة غير ربحية تهدف لدعم المشاريع الخيرية والمجتمعية باستخدام التقنية.</p>
+  </section>
+
+  <section id="donate">
+    <h2>تبرع عبر شام كاش</h2>
+    <p>يمكنك التبرع مباشرة عبر تطبيق <strong>شام كاش</strong> من خلال مسح الباركود أدناه:</p>
+    <img src="shamcash-qr.jpg" alt="باركود شام كاش" class="qr" />
+    <p><strong>اسم الحساب:</strong> BASSET199</p>
+    <p><strong>رقم الحساب:</strong> 3984237881771363</p>
+    <p>نشكرك على دعمك لرسالة <strong>عَمّ الخيرية</strong>.</p>
   </section>
 
   <footer>
-    &copy; 2025 عَمّ الخيرية. جميع الحقوق محفوظة.
+    <p>© 2025 عَمّ الخيرية. جميع الحقوق محفوظة.</p>
   </footer>
-
 </body>
 </html>

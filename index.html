@@ -13,14 +13,14 @@
       color: #333;
     }
     header {
-      background-color: #1e90ef;
-      color: white;
-      padding: 2rem;
-      text-align: center;
+      background-color: #05275a;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     header img {
-      max-width: 100px;
-      margin-bottom: 1rem;
+      height: 80px;
     }
     nav {
       background-color: #fff;
@@ -37,13 +37,25 @@
     section {
       padding: 2rem;
       text-align: center;
+      background-color: #fff;
     }
     footer {
-      background-color: #222;
+      background-color: #05275a;
+      color: white;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .bottom-bar {
+      background-color: #011736;
       color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 10px;
     }
   </style>
 </head>
@@ -51,45 +63,50 @@
 
   <header>
     <img src="logo.png" alt="شعار عمّ الخيرية">
-    <h1>عَمّ الخيرية</h1>
-    <p>معًا لنصنع الأثر</p>
   </header>
 
   <nav>
-    <a href="about.html">من نحن</a>
-    <a href="activities.html">أنشطتنا</a>
-    <a href="volunteer.html">تطوع معنا</a>
-    <a href="donate.html">تبرع</a>
+    <a href="#about">من نحن</a>
+    <a href="#activities">أنشطتنا</a>
+    <a href="#volunteer">تطوع معنا</a>
+    <a href="#donate">تبرع</a>
   </nav>
 
-  <section>
+  <section id="about">
     <h2>مرحبًا بكم في عَمّ الخيرية</h2>
     <p>نحن مبادرة تسعى إلى تمكين العمل الخيري والمجتمعي باستخدام التقنية والشفافية، لتعظيم الأثر.</p>
   </section>
 
-  <footer style="background-color: #05275a; color: white; padding: 40px 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
-<div style="flex: 1;">
-<h3>معلومات الاتصال</h3>
-<p>حلب، سوريا</p>
-<p>123456789</p>
-<p>email@example.org</p>
-</div>
-<div style="flex: 1;">
-<h3>روابط سريعة</h3>
-<ul style="list-style: none; padding: 0;">
-<li><a href="#about" style="color: white;">من نحن</a></li>
-<li><a href="#activities" style="color: white;">أنشطتنا</a></li>
-<li><a href="#volunteer" style="color: white;">تطوع معنا</a></li>
-<li><a href="#donate" style="color: white;">تبرع</a></li>
-</ul>
-</div>
-<div style="flex: 1; text-align: right;">
-<img src="logo.png" alt="شعار عَمّ" style="height: 80px;">
-</div>
-</footer>
-<div style="background-color: #011736; color: white; text-align: center; padding: 10px;">&copy; 2025 عَمّ الخيرية. جميع الحقوق محفوظة.</div>
-    &copy; 2025 عَمّ الخيرية. جميع الحقوق محفوظة.
+  <section id="donate">
+    <h2>تبرع عبر شام كاش</h2>
+    <p>يرجى مسح الباركود أدناه لإتمام عملية التبرع:</p>
+    <img src="9f11884c-fdb4-4f33-880c-5843a28eb069.png" alt="باركود شام كاش" style="max-width: 300px; margin-top: 1rem;">
+  </section>
+
+  <footer>
+    <div style="flex: 1;">
+      <h3>معلومات الاتصال</h3>
+      <p>حلب، سوريا</p>
+      <p>123456789</p>
+      <p>email@example.org</p>
+    </div>
+    <div style="flex: 1;">
+      <h3>روابط سريعة</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#activities">أنشطتنا</a></li>
+        <li><a href="#volunteer">تطوع معنا</a></li>
+        <li><a href="#donate">تبرع</a></li>
+      </ul>
+    </div>
+    <div style="flex: 1; text-align: right;">
+      <img src="logo.png" alt="شعار عَمّ" style="height: 80px;">
+    </div>
   </footer>
+
+  <div class="bottom-bar">
+    &copy; 2025 عَمّ الخيرية. جميع الحقوق محفوظة.
+  </div>
 
 </body>
 </html>

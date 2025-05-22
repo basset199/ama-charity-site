@@ -1,1 +1,76 @@
-<!DOCTYPE html><html><head><title>عَمَّ</title></head><body><h1>مرحبًا بك في موقع عَمَّ</h1></body></html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عَمّ - موقع خيري</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #1e88e5;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #1e88e5;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>عَمّ - موقع خيري</h1>
+    <p>نبني الأثر معاً</p>
+  </header>
+
+  <section>
+    <h2>من نحن</h2>
+    <p>نحن مبادرة غير ربحية تهدف لدعم المشاريع الخيرية والمجتمعية باستخدام التقنية.</p>
+  </section>
+
+  <section>
+    <h2>تواصل معنا</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="الاسم الكامل" required>
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+      <textarea name="message" rows="5" placeholder="رسالتك" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 عَمّ. جميع الحقوق محفوظة.</p>
+  </footer>
+
+</body>
+</html>
+Fix: remove duplicated contact form
+Update form action
